@@ -138,7 +138,7 @@ export default function Header() {
             <li>
               <Link
                 onClick={() => setShowMenu(false)}
-                href="/"
+                href="home"
                 className="block cursor-pointer hover:text-gray-900 text-[15px] msm:text-[13px] py-2 px-3 rounded hover:bg-gray-100  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white  dark:border-gray-700"
                 aria-current="page"
               >

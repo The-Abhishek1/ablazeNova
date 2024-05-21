@@ -22,7 +22,7 @@ export default function Package() {
       </div>
       <div className="flex flex-row flex-wrap justify-around gap-10">
         <div className="flex flex-col gap-3 w-[280px] bg-slate-200 rounded-lg group">
-          <div className="flex flex-col gap-3 bg-indigo-950 transition-all ease-in-out delay-200 duration-700 group-hover:bg-blue-500 text-white p-5 rounded-lg">
+          <div className="flex flex-col gap-3 h-[180px] bg-indigo-950 transition-all ease-in-out delay-200 duration-700 group-hover:bg-blue-500 text-white p-5 rounded-lg">
             <div className="flex flex-col gap-3">
               <h1 className="font-bold text-[20px] mxl:text-[16px]">
                 Silver Package
@@ -75,7 +75,7 @@ export default function Package() {
           </div>
         </div>
         <div className="flex flex-col gap-3 w-[280px] bg-slate-200 rounded-lg group">
-          <div className="flex flex-col gap-3 bg-indigo-950 transition-all ease-in-out delay-200 duration-700 group-hover:bg-blue-500 text-white p-5 rounded-lg">
+          <div className="flex flex-col gap-3  h-[180px] bg-indigo-950 transition-all ease-in-out delay-200 duration-700 group-hover:bg-blue-500 text-white p-5 rounded-lg">
             <div className="flex flex-col gap-3">
               <h1 className="font-bold text-[20px] mxl:text-[16px]">
                 Gold Package
@@ -128,7 +128,7 @@ export default function Package() {
           </div>
         </div>
         <div className="flex flex-col gap-3 w-[280px] bg-slate-200 rounded-lg group">
-          <div className="flex flex-col gap-3 bg-indigo-950 transition-all ease-in-out delay-200 duration-700 group-hover:bg-blue-500 text-white p-5 rounded-lg">
+          <div className="flex flex-col gap-3  h-[180px] bg-indigo-950 transition-all ease-in-out delay-200 duration-700 group-hover:bg-blue-500 text-white p-5 rounded-lg">
             <div className="flex flex-col gap-3">
               <h1 className="font-bold text-[20px] mxl:text-[16px]">
                 Platinum Package
