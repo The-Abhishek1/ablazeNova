@@ -86,7 +86,7 @@ export default function Rightside() {
             disabled={loading}
             className="bg-blue-500 text-[13px] p-2 rounded-2xl text-white font-bold mt-5"
           >
-            {loading ? "Loading" : "SignIn"}
+            {loading ? "Loading!!!" : "SignIn"}
           </button>
           <p className="text-center font-bold ">OR</p>
           <div

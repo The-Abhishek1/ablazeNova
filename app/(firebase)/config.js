@@ -4,6 +4,9 @@ import {
   getAuth,
   signInWithCredential,
 } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+
+//Initialization
 const firebaseConfig = {
   apiKey: "AIzaSyDQALksKRLJDO1xnfhyqdv8peqYJwg9C4Q",
   authDomain: "ablazenova-1777d.firebaseapp.com",
@@ -18,3 +21,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const signinGoogle = new GoogleAuthProvider(app);
+export const db = getFirestore(app);
