@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 export default function Leftside() {
   const navigation = useRouter();
   return (
-    <div className="flex mmd:hidden flex-col rounded-md justify-center text-white bg-blue-500 p-5 h-[450px] md:w-[400px]">
+    <div className="flex mmd:hidden flex-col rounded-md justify-center text-white bg-blue-500 p-5 h-[400px] md:w-[400px]">
       <h3 className="text-center font-bold text-[20px]">Come join us!</h3>
       <p className="text-[13px] py-3 text-center">
         We are so excited to have you here. If you haven't already, create an
