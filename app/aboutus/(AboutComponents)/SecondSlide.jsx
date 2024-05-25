@@ -30,9 +30,9 @@ export default function SecondSlide() {
             <p className="text-blue-600 inline"> IT Solution</p>
           </div>
           <p className="mxl:text-[13px] text-center">
-            Collaboratively envisioneer user friendly supply chains and cross
-            unit imperative. Authoritativel fabricate competitive resource and
-            holistic synergy. Uniquely generate efficient schemas before future.
+            We are the catalysts of business success, harnessing the power of IT
+            solutions to propel your venture to new heights. With our expertise
+            and innovation, we pave the path to your digital triumph.
           </p>
         </div>
         <div className="flex  mlg:ml-5 mmd:flex-col justify-center gap-10 flex-row mmd:gap-3">

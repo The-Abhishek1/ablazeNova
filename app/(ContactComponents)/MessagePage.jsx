@@ -59,9 +59,8 @@ export default function MessagePage() {
           <h1 className="font-bold text-[19px]">Have Any Questions?</h1>
         </div>
         <div className="text-center text-gray-500 text-[15px]">
-          Enthusiastically disintermediate one-to-one leadership via business
-          e-commerce. Dramatically reintermediate compelling process
-          improvements rather than empowered relationships.
+          Connect with us effortlessly through our intuitive contact form. Let's
+          start a conversation and turn your inquiries into solutions.
         </div>
         {success ? null : (
           <form

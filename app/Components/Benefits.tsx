@@ -17,7 +17,7 @@ export default function Benefits() {
           <div className="flex flex-col gap-2 bg-indigo-950 p-4 rounded-md text-white">
             <h3 className="font-bold text-center">Flexible Solutions</h3>
             <p className="text-[13px] text-center">
-              Completely grow multimedia based content before global scenarios
+              Customizable to meet your unique business needs.
             </p>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function Benefits() {
           <div className="flex flex-col gap-2 bg-indigo-950 p-4 rounded-md text-white">
             <h3 className="font-bold text-center">24/7 Unlimited Support</h3>
             <p className="text-[13px] text-center">
-              Completely grow multimedia based content before global scenarios
+              Round-the-clock assistance whenever you need it.
             </p>
           </div>
         </div>

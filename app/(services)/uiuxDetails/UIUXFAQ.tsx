@@ -7,7 +7,7 @@ import { IoMdAdd } from "react-icons/io";
 
 //Main Function
 export default function UIUXFAQ() {
-  const [firstshow, setfFirstShow] = useState(false);
+  const [firstshow, setfFirstShow] = useState(true);
   const [secondtshow, setfSecondShow] = useState(false);
   const [thirdhow, setThirdShow] = useState(false);
 
@@ -32,7 +32,7 @@ export default function UIUXFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              What is UI/UX design and why is it important?
             </h1>
             {firstshow ? (
               <FaMinus
@@ -54,10 +54,10 @@ export default function UIUXFAQ() {
           </div>
           {firstshow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px] ">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              UI/UX design focuses on creating intuitive interfaces and engaging
+              user experiences for digital products. It's crucial for attracting
+              and retaining users, improving usability, and achieving business
+              goals.
             </div>
           ) : null}
         </div>
@@ -67,7 +67,7 @@ export default function UIUXFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              How do you ensure a user-friendly design for our project?
             </h1>
             {secondtshow ? (
               <FaMinus
@@ -89,10 +89,10 @@ export default function UIUXFAQ() {
           </div>
           {secondtshow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px]">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              We follow a user-centered design approach, conducting research,
+              creating personas, wireframing, prototyping, and testing to ensure
+              that the final design meets user needs, preferences, and
+              expectations.
             </div>
           ) : null}
         </div>
@@ -102,7 +102,8 @@ export default function UIUXFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              Can you redesign an existing website or application for better
+              usability?
             </h1>
             {thirdhow ? (
               <FaMinus
@@ -124,10 +125,9 @@ export default function UIUXFAQ() {
           </div>
           {thirdhow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px]">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              Absolutely! We specialize in redesigning websites and applications
+              to improve usability, enhance visual appeal, and optimize user
+              flows based on feedback, analytics, and industry best practices.
             </div>
           ) : null}
         </div>

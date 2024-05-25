@@ -7,7 +7,7 @@ import { IoMdAdd } from "react-icons/io";
 
 //Main Function
 export default function SoftwareFAQ() {
-  const [firstshow, setfFirstShow] = useState(false);
+  const [firstshow, setfFirstShow] = useState(true);
   const [secondtshow, setfSecondShow] = useState(false);
   const [thirdhow, setThirdShow] = useState(false);
 
@@ -32,7 +32,7 @@ export default function SoftwareFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              What types of custom software solutions do you provide?
             </h1>
             {firstshow ? (
               <FaMinus
@@ -54,10 +54,9 @@ export default function SoftwareFAQ() {
           </div>
           {firstshow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px] ">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              We offer a wide range of custom software solutions, including
+              enterprise software, SaaS applications, mobile apps, and
+              specialized business tools tailored to your needs.
             </div>
           ) : null}
         </div>
@@ -67,7 +66,7 @@ export default function SoftwareFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              How do you ensure the security of the software you develop?
             </h1>
             {secondtshow ? (
               <FaMinus
@@ -89,10 +88,9 @@ export default function SoftwareFAQ() {
           </div>
           {secondtshow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px]">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              We prioritize security by implementing best practices such as
+              secure coding, regular security audits, encryption, and compliance
+              with industry standards to protect your data and systems.
             </div>
           ) : null}
         </div>
@@ -102,7 +100,7 @@ export default function SoftwareFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              Can you integrate new software with our existing systems?
             </h1>
             {thirdhow ? (
               <FaMinus
@@ -124,10 +122,9 @@ export default function SoftwareFAQ() {
           </div>
           {thirdhow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px]">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              Yes, we specialize in seamless integration, ensuring that the new
+              software works efficiently with your existing systems to enhance
+              functionality and streamline operations.
             </div>
           ) : null}
         </div>

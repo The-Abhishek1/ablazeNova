@@ -7,7 +7,7 @@ import { IoMdAdd } from "react-icons/io";
 
 //Main Function
 export default function DigitalFAQ() {
-  const [firstshow, setfFirstShow] = useState(false);
+  const [firstshow, setfFirstShow] = useState(true);
   const [secondtshow, setfSecondShow] = useState(false);
   const [thirdhow, setThirdShow] = useState(false);
 
@@ -32,7 +32,7 @@ export default function DigitalFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              How can digital marketing help my business grow?
             </h1>
             {firstshow ? (
               <FaMinus
@@ -54,10 +54,10 @@ export default function DigitalFAQ() {
           </div>
           {firstshow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px] ">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              Digital marketing increases your online visibility, drives
+              targeted traffic to your site, and helps convert visitors into
+              customers through strategies like SEO, social media, and paid
+              advertising.
             </div>
           ) : null}
         </div>
@@ -67,7 +67,7 @@ export default function DigitalFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              How do you measure the success of a digital marketing campaign?
             </h1>
             {secondtshow ? (
               <FaMinus
@@ -89,10 +89,9 @@ export default function DigitalFAQ() {
           </div>
           {secondtshow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px]">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              We use various metrics such as website traffic, conversion rates,
+              click-through rates, and return on investment (ROI) to evaluate
+              and ensure the success of your campaign.
             </div>
           ) : null}
         </div>
@@ -102,7 +101,7 @@ export default function DigitalFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              How long does it take to see results from digital marketing?
             </h1>
             {thirdhow ? (
               <FaMinus
@@ -124,10 +123,9 @@ export default function DigitalFAQ() {
           </div>
           {thirdhow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px]">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              Results can vary, but typically, you’ll start to see significant
+              improvements within 3 to 6 months as your online presence grows
+              and strategies take effect.
             </div>
           ) : null}
         </div>

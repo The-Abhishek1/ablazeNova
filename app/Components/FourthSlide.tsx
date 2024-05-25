@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import { BsMotherboard } from "react-icons/bs";
-import web from "@/publicgraphic-tablet.png";
+import web from "@/publicwebsite.png";
 
 //Main Function
 export default function FourthSlide() {

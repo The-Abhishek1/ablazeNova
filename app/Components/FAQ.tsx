@@ -7,7 +7,7 @@ import { IoMdAdd } from "react-icons/io";
 
 //Main Function
 export default function FAQ() {
-  const [firstshow, setfFirstShow] = useState(false);
+  const [firstshow, setfFirstShow] = useState(true);
   const [secondtshow, setfSecondShow] = useState(false);
   const [thirdhow, setThirdShow] = useState(false);
 

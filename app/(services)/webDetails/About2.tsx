@@ -16,7 +16,7 @@ export default function About2() {
             onClick={() => {
               router.push("webdevelopment");
             }}
-            className="flex bg-slate-200  p-2 px-5 rounded-md flex-row items-center justify-between gap-4 mxl:text-[13px] hover:text-blue-600"
+            className="flex  bg-slate-200 cursor-pointer  p-2 px-5 rounded-md flex-row items-center justify-between gap-4 mxl:text-[13px] hover:text-blue-600"
           >
             <h3>Web Development</h3>
             <FaArrowRightLong />
@@ -25,7 +25,7 @@ export default function About2() {
             onClick={() => {
               router.push("digitalmarketing");
             }}
-            className="flex bg-slate-200  p-2 px-5 rounded-md flex-row items-center justify-between gap-4 mxl:text-[13px] hover:text-blue-600"
+            className="flex bg-slate-200 cursor-pointer  p-2 px-5 rounded-md flex-row items-center justify-between gap-4 mxl:text-[13px] hover:text-blue-600"
           >
             <h3>Digital Marketing</h3>
             <FaArrowRightLong />
@@ -34,7 +34,7 @@ export default function About2() {
             onClick={() => {
               router.push("softwareservices");
             }}
-            className="flex bg-slate-200  p-2 px-5 rounded-md flex-row items-center justify-between gap-4 mxl:text-[13px] hover:text-blue-600"
+            className="flex bg-slate-200 cursor-pointer  p-2 px-5 rounded-md flex-row items-center justify-between gap-4 mxl:text-[13px] hover:text-blue-600"
           >
             <h3>Software Services</h3>
             <FaArrowRightLong />
@@ -43,7 +43,7 @@ export default function About2() {
             onClick={() => {
               router.push("businessanalysis");
             }}
-            className="flex bg-slate-200  p-2 px-5 rounded-md flex-row items-center justify-between gap-4 mxl:text-[13px] hover:text-blue-600"
+            className="flex bg-slate-200 cursor-pointer  p-2 px-5 rounded-md flex-row items-center justify-between gap-4 mxl:text-[13px] hover:text-blue-600"
           >
             <h3>Business Analysis</h3>
             <FaArrowRightLong />
@@ -52,7 +52,7 @@ export default function About2() {
             onClick={() => {
               router.push("uiuxdesign");
             }}
-            className="flex bg-slate-200  p-2 px-5 rounded-md flex-row items-center justify-between gap-4 mxl:text-[13px] hover:text-blue-600"
+            className="flex bg-slate-200 cursor-pointer  p-2 px-5 rounded-md flex-row items-center justify-between gap-4 mxl:text-[13px] hover:text-blue-600"
           >
             <h3>UI/UX Design</h3>
             <FaArrowRightLong />
@@ -61,7 +61,7 @@ export default function About2() {
             onClick={() => {
               router.push("appdevelopment");
             }}
-            className="flex bg-slate-200  p-2 px-5 rounded-md flex-row items-center justify-between gap-4 mxl:text-[13px] hover:text-blue-600"
+            className="flex bg-slate-200 cursor-pointer  p-2 px-5 rounded-md flex-row items-center justify-between gap-4 mxl:text-[13px] hover:text-blue-600"
           >
             <h3>App Development</h3>
             <FaArrowRightLong />

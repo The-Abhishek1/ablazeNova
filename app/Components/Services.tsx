@@ -3,12 +3,12 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import { BsMotherboard } from "react-icons/bs";
 import { FaArrowRightLong } from "react-icons/fa6";
-import promote from "@/publicpromote.png";
-import design from "@/publicillustration.png";
-import website from "@/publicapp-development.png";
-import business from "@/publicdata-analysis.png";
-import services from "@/publicsoftwareservice.png";
-import app from "@/publiccoding.png";
+import promote from "@/publicdigital_marketing.avif";
+import design from "@/publicuiux_2.jpg";
+import website from "@/publicApp-Development-1.png";
+import business from "@/publicbusiness-analysis2.jpg";
+import services from "@/publicsoftwareservices1.jpg";
+import app from "@/publicweb-development.jpg";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 

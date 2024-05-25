@@ -13,18 +13,15 @@ export default function AboutUIUX() {
         </h1>
         <div className="mlg:max-w-[400px] flex flex-col gap-6 text-[13px]">
           <p>
-            Globally optimize highly efficient solution whereas open-source
-            application. Completely strategize quality internal or "organic"
-            sources for virtual e-business. Phosfluorescently re-engineer
-            enterprise markets via value-added networks. Seamlessly restore
-            inexpensive e-markets vis-a-vis corporate intellectual capital.
-            Holisticly reinvent compelling niche markets via scalable strategic.
+            Great design is crucial for engaging user experiences. At
+            ablazeNova, we craft intuitive and visually appealing interfaces
+            that captivate users. Our UI/UX experts focus on creating designs
+            that are both beautiful and functional
           </p>
           <p>
-            Authoritatively scale business meta-services before client-based
-            technologies. Collaboratively strategize synergistic scenarios
-            rather than flexible action items. Continually deliver market
-            positioning convergence and mission-critical infrastructures.
+            From wireframes to final design, we ensure every element enhances
+            usability and delight. Our UI/UX design services help you create
+            memorable digital experiences that keep users coming back.
           </p>
         </div>
       </div>
@@ -40,42 +37,35 @@ export default function AboutUIUX() {
           <div className="flex flex-col  gap-2">
             <div className="flex flex-row items-center  gap-3">
               <FaCircleCheck color="blue" size={16} />
-              <p className="text-[13px] mxl:text-[13px]">
-                Up am intention on dependent questions
-              </p>
+              <p className="text-[13px] mxl:text-[13px]">User Research</p>
             </div>
             <div className="flex flex-row items-center  gap-3">
               <FaCircleCheck color="blue" size={16} />
               <p className="text-[13px] mxl:text-[13px]">
-                Surrounded affronting favourable
+                Wireframing & Prototyping
               </p>
             </div>
             <div className="flex flex-row items-center  gap-3">
               <FaCircleCheck color="blue" size={16} />
-              <p className="text-[13px] mxl:text-[13px]">
-                Sed ut perspiciatis unde omnis iste natus
-              </p>
+              <p className="text-[13px] mxl:text-[13px]">Visual Design</p>
+            </div>
+            <div className="flex flex-row items-center  gap-3">
+              <FaCircleCheck color="blue" size={16} />
+              <p className="text-[13px] mxl:text-[13px]">Usability Testing</p>
             </div>
             <div className="flex flex-row items-center  gap-3">
               <FaCircleCheck color="blue" size={16} />
               <p className="text-[13px] mxl:text-[13px]">
-                Special Careness Risk Free
-              </p>
-            </div>
-            <div className="flex flex-row items-center  gap-3">
-              <FaCircleCheck color="blue" size={16} />
-              <p className="text-[13px] mxl:text-[13px]">
-                Bibend auctor nisi elit volume are beguiled
+                Continuous Improvement
               </p>
             </div>
           </div>
         </div>
       </div>
       <div className="text-[13px] mlg:max-w-[400px] mlg:text-center">
-        Credibly brand accurate data after user friendly ROI. Professionally
-        negotiate inexpensive markets and team driven scenarios. Interactively
-        seize wireless e-tailers after resource maximizing content.
-        Collaboratively leverage existing.
+        Ready to elevate your digital experience? Let ablazeNova create
+        user-centric designs that captivate and convert. Contact us today to get
+        started!
       </div>
     </div>
   );

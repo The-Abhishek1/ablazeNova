@@ -13,18 +13,14 @@ export default function AboutBusiness() {
         </h1>
         <div className="mlg:max-w-[400px] flex flex-col gap-6 text-[13px]">
           <p>
-            Globally optimize highly efficient solution whereas open-source
-            application. Completely strategize quality internal or "organic"
-            sources for virtual e-business. Phosfluorescently re-engineer
-            enterprise markets via value-added networks. Seamlessly restore
-            inexpensive e-markets vis-a-vis corporate intellectual capital.
-            Holisticly reinvent compelling niche markets via scalable strategic.
+            Informed decisions drive business success. At ablazeNova, we offer
+            comprehensive business analysis to help you optimize operations and
+            grow. Our experts use data-driven insights for strategic planning.
           </p>
           <p>
-            Authoritatively scale business meta-services before client-based
-            technologies. Collaboratively strategize synergistic scenarios
-            rather than flexible action items. Continually deliver market
-            positioning convergence and mission-critical infrastructures.
+            From market research to process optimization, we provide tailored,
+            actionable insights. Our business analysis services help you improve
+            efficiency and expand your market reach.
           </p>
         </div>
       </div>
@@ -40,42 +36,33 @@ export default function AboutBusiness() {
           <div className="flex flex-col  gap-2">
             <div className="flex flex-row items-center  gap-3">
               <FaCircleCheck color="blue" size={16} />
-              <p className="text-[13px] mxl:text-[13px]">
-                Up am intention on dependent questions
-              </p>
+              <p className="text-[13px] mxl:text-[13px]">Market Research</p>
+            </div>
+            <div className="flex flex-row items-center  gap-3">
+              <FaCircleCheck color="blue" size={16} />
+              <p className="text-[13px] mxl:text-[13px]">Data Analysis</p>
             </div>
             <div className="flex flex-row items-center  gap-3">
               <FaCircleCheck color="blue" size={16} />
               <p className="text-[13px] mxl:text-[13px]">
-                Surrounded affronting favourable
+                Process Optimization
               </p>
             </div>
             <div className="flex flex-row items-center  gap-3">
               <FaCircleCheck color="blue" size={16} />
-              <p className="text-[13px] mxl:text-[13px]">
-                Sed ut perspiciatis unde omnis iste natus
-              </p>
+              <p className="text-[13px] mxl:text-[13px]">Performance Metrics</p>
             </div>
             <div className="flex flex-row items-center  gap-3">
               <FaCircleCheck color="blue" size={16} />
-              <p className="text-[13px] mxl:text-[13px]">
-                Special Careness Risk Free
-              </p>
-            </div>
-            <div className="flex flex-row items-center  gap-3">
-              <FaCircleCheck color="blue" size={16} />
-              <p className="text-[13px] mxl:text-[13px]">
-                Bibend auctor nisi elit volume are beguiled
-              </p>
+              <p className="text-[13px] mxl:text-[13px]">Strategic Planning</p>
             </div>
           </div>
         </div>
       </div>
       <div className="text-[13px] mlg:max-w-[400px] mlg:text-center">
-        Credibly brand accurate data after user friendly ROI. Professionally
-        negotiate inexpensive markets and team driven scenarios. Interactively
-        seize wireless e-tailers after resource maximizing content.
-        Collaboratively leverage existing.
+        Ready to unlock the full potential of your business? Let ablazeNova
+        provide the insights and strategies you need. Contact us today to get
+        started!
       </div>
     </div>
   );

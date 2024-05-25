@@ -13,18 +13,15 @@ export default function AboutApp() {
         </h1>
         <div className="mlg:max-w-[400px] flex flex-col gap-6 text-[13px]">
           <p>
-            Globally optimize highly efficient solution whereas open-source
-            application. Completely strategize quality internal or "organic"
-            sources for virtual e-business. Phosfluorescently re-engineer
-            enterprise markets via value-added networks. Seamlessly restore
-            inexpensive e-markets vis-a-vis corporate intellectual capital.
-            Holisticly reinvent compelling niche markets via scalable strategic.
+            Transform your ideas into powerful mobile applications with
+            ablazeNova. Our expert team develops high-quality, user-friendly
+            apps that meet your business needs and captivate users. We focus on
+            delivering seamless performance and engaging experiences.
           </p>
           <p>
-            Authoritatively scale business meta-services before client-based
-            technologies. Collaboratively strategize synergistic scenarios
-            rather than flexible action items. Continually deliver market
-            positioning convergence and mission-critical infrastructures.
+            From concept to launch, we ensure every step of the app development
+            process is meticulously planned and executed. Our app development
+            services help you reach a wider audience and drive growth.
           </p>
         </div>
       </div>
@@ -41,41 +38,33 @@ export default function AboutApp() {
             <div className="flex flex-row items-center  gap-3">
               <FaCircleCheck color="blue" size={16} />
               <p className="text-[13px] mxl:text-[13px]">
-                Up am intention on dependent questions
+                Custom App Development
               </p>
             </div>
             <div className="flex flex-row items-center  gap-3">
               <FaCircleCheck color="blue" size={16} />
               <p className="text-[13px] mxl:text-[13px]">
-                Surrounded affronting favourable
+                Cross-Platform Compatibility
               </p>
             </div>
             <div className="flex flex-row items-center  gap-3">
               <FaCircleCheck color="blue" size={16} />
-              <p className="text-[13px] mxl:text-[13px]">
-                Sed ut perspiciatis unde omnis iste natus
-              </p>
+              <p className="text-[13px] mxl:text-[13px]">User-Centric Design</p>
             </div>
             <div className="flex flex-row items-center  gap-3">
               <FaCircleCheck color="blue" size={16} />
-              <p className="text-[13px] mxl:text-[13px]">
-                Special Careness Risk Free
-              </p>
+              <p className="text-[13px] mxl:text-[13px]">Robust Security</p>
             </div>
             <div className="flex flex-row items-center  gap-3">
               <FaCircleCheck color="blue" size={16} />
-              <p className="text-[13px] mxl:text-[13px]">
-                Bibend auctor nisi elit volume are beguiled
-              </p>
+              <p className="text-[13px] mxl:text-[13px]">Ongoing Support</p>
             </div>
           </div>
         </div>
       </div>
       <div className="text-[13px] mlg:max-w-[400px] mlg:text-center">
-        Credibly brand accurate data after user friendly ROI. Professionally
-        negotiate inexpensive markets and team driven scenarios. Interactively
-        seize wireless e-tailers after resource maximizing content.
-        Collaboratively leverage existing.
+        Ready to bring your app idea to life? Let ablazeNova develop a top-notch
+        mobile application that stands out. Contact us today to get started!
       </div>
     </div>
   );

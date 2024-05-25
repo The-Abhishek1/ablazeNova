@@ -7,7 +7,7 @@ import { IoMdAdd } from "react-icons/io";
 
 //Main Function
 export default function AppFAQ() {
-  const [firstshow, setfFirstShow] = useState(false);
+  const [firstshow, setfFirstShow] = useState(true);
   const [secondtshow, setfSecondShow] = useState(false);
   const [thirdhow, setThirdShow] = useState(false);
 
@@ -32,7 +32,7 @@ export default function AppFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              What platforms do you develop apps for?
             </h1>
             {firstshow ? (
               <FaMinus
@@ -54,10 +54,9 @@ export default function AppFAQ() {
           </div>
           {firstshow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px] ">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              We develop mobile apps for both iOS and Android platforms,
+              ensuring compatibility and accessibility across a wide range of
+              devices.
             </div>
           ) : null}
         </div>
@@ -67,7 +66,7 @@ export default function AppFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              How long does it take to develop a mobile app?
             </h1>
             {secondtshow ? (
               <FaMinus
@@ -89,10 +88,9 @@ export default function AppFAQ() {
           </div>
           {secondtshow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px]">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              The timeline varies based on the complexity and features of the
+              app, but typically, it takes between 3 to 6 months from
+              conceptualization to launch.
             </div>
           ) : null}
         </div>
@@ -102,7 +100,7 @@ export default function AppFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              Can you assist with app store submission and approval?
             </h1>
             {thirdhow ? (
               <FaMinus
@@ -124,10 +122,10 @@ export default function AppFAQ() {
           </div>
           {thirdhow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px]">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              Yes, we provide full support throughout the app store submission
+              process, including preparing assets, filling out forms, and
+              ensuring compliance with guidelines to get your app approved and
+              published.
             </div>
           ) : null}
         </div>

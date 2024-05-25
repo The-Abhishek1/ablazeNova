@@ -7,7 +7,7 @@ import { IoMdAdd } from "react-icons/io";
 
 //Main Function
 export default function BusinessFAQ() {
-  const [firstshow, setfFirstShow] = useState(false);
+  const [firstshow, setfFirstShow] = useState(true);
   const [secondtshow, setfSecondShow] = useState(false);
   const [thirdhow, setThirdShow] = useState(false);
 
@@ -32,7 +32,7 @@ export default function BusinessFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              What does business analysis involve?
             </h1>
             {firstshow ? (
               <FaMinus
@@ -54,10 +54,9 @@ export default function BusinessFAQ() {
           </div>
           {firstshow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px] ">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              Business analysis involves evaluating your business processes,
+              identifying areas for improvement, and recommending strategic
+              solutions to optimize performance and achieve your goals.
             </div>
           ) : null}
         </div>
@@ -67,7 +66,7 @@ export default function BusinessFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              How can business analysis benefit my company?
             </h1>
             {secondtshow ? (
               <FaMinus
@@ -89,10 +88,9 @@ export default function BusinessFAQ() {
           </div>
           {secondtshow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px]">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              Business analysis helps you make informed decisions based on
+              data-driven insights, improves efficiency, reduces costs, enhances
+              customer satisfaction, and drives overall business growth.
             </div>
           ) : null}
         </div>
@@ -102,7 +100,7 @@ export default function BusinessFAQ() {
             className="flex flex-row font-bold gap-2 p-3 justify-between items-center w-full "
           >
             <h1 className="text-[15px] mmd:text-[13px]">
-              Where can I get analytics help?
+              What tools and methodologies do you use for business analysis?
             </h1>
             {thirdhow ? (
               <FaMinus
@@ -124,10 +122,10 @@ export default function BusinessFAQ() {
           </div>
           {thirdhow ? (
             <div className="text-[14px]  p-3 mmd:text-[12px]">
-              Dramatically disseminate real-time portals rather than top-line
-              action items. Uniquely provide access to low-risk high-yield
-              products without dynamic products. Progressively re-engineer
-              low-risk high-yield ideas rather than emerging alignments.
+              We utilize a variety of tools and methodologies such as SWOT
+              analysis, PESTLE analysis, stakeholder interviews, process
+              modeling, and data analytics to provide comprehensive and
+              effective business analysis solutions tailored to your needs.
             </div>
           ) : null}
         </div>

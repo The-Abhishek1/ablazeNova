@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import photo from "@/publictech1.jpg";
+import photo from "@/publicuiux_2.jpg";
 //Main Function
 export default function ImageSlide() {
   return (
