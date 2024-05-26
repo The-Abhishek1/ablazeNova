@@ -2,9 +2,22 @@ import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
 
+const PNG_FILE_URL = "http://localhost:3000/FinalDigittalMarketing.pdf";
+
 //Main Function for link to all Services
 export default function About2() {
   const router = useRouter();
+
+  const downloadFile = (url) => {
+    const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
+
   return (
     <div className="flex w-full mmd:items-center flex-col gap-8 bg-red pt-2 p-6 ">
       <div className="flex mmd:w-[180%]  msmm:w-[140%] flex-col p-5 rounded-md  bg-slate-100 gap-3">
@@ -73,7 +86,12 @@ export default function About2() {
           Download Brochure
         </h1>
         <div className="flex flex-col gap-3">
-          <button className="bg-blue-600 p-3 text-white rounded-md hover:bg-white hover:text-blue-600 font-bold">
+          <button
+            onClick={() => {
+              downloadFile(PNG_FILE_URL);
+            }}
+            className="bg-blue-600 p-3 text-white rounded-md hover:bg-white hover:text-blue-600 font-bold"
+          >
             Download PDF
           </button>
           <button className="bg-white p-3 text-blue-600 rounded-md hover:text-white hover:bg-blue-600 font-bold">

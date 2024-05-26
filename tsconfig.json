@@ -22,6 +22,6 @@
        "@/public*": ["./public/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/services/[service]/page.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/services/[service]/page.tsx", "app/(services)/webDetails/About2.tsx"],
   "exclude": ["node_modules"]
 }
