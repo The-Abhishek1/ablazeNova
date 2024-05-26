@@ -8,7 +8,7 @@ const PNG_FILE_URL = "http://localhost:3000/FinalDigittalMarketing.pdf";
 export default function About2() {
   const router = useRouter();
 
-  const downloadFile = (url) => {
+  const downloadFile = (url: any) => {
     const fileName = url.split("/").pop();
     const aTag = document.createElement("a");
     aTag.href = url;
