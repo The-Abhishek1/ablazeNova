@@ -113,7 +113,6 @@ export default function Header() {
             height={40}
             width={40}
             className="rounded-[30px] cursor-pointer sm:h-[48px] sm:w-[48px]"
-            priority={true}
           />
         </div>
         <div

@@ -48,7 +48,7 @@ export default function Rightside() {
           email === "abhishekgowda85384@gamil.com"
           // || "idiot63666@gmail.com"
         ) {
-          navigation.push("/home");
+          navigation.push("/adminx");
         } else {
           navigation.push("/home");
         }

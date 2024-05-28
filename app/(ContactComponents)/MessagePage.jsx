@@ -56,20 +56,23 @@ export default function MessagePage() {
               Contact With US!
             </h1>
           </div>
-          <h1 className="font-bold text-[19px]">Have Any Questions?</h1>
+          <h1 className="font-bold text-[19px]">
+            {success ? null : "Have Any Questions?"}
+          </h1>
         </div>
-        <div className="text-center text-gray-500 text-[15px]">
-          Connect with us effortlessly through our intuitive contact form. Let's
-          start a conversation and turn your inquiries into solutions.
+        <div className="text-center text-gray-500 text-[14px]">
+          {success
+            ? null
+            : "Connect with us effortlessly through our intuitive contact form. Let's start a conversation and turn your inquiries into solutions."}
         </div>
         {success ? null : (
           <form
             onSubmit={handleSubmit}
-            className="sm:grid  grid-cols-2 gap-5 flex flex-col"
+            className="sm:grid  grid-cols-2 gap-5 flex flex-col "
           >
             <div className=" rounded-md flex relative items-center justify-center">
               <input
-                className="p-2.5 outline-none rounded-md w-full"
+                className="p-2.5 outline-none text-[14px] rounded-md w-full"
                 type="text"
                 name="name"
                 placeholder="Your Name"
@@ -83,7 +86,7 @@ export default function MessagePage() {
             </div>
             <div className=" rounded-md flex relative items-center justify-center">
               <input
-                className="p-2.5 outline-none rounded-md w-full"
+                className="p-2.5 outline-none text-[14px] rounded-md w-full"
                 type="email"
                 name="email"
                 id="email"
@@ -100,7 +103,7 @@ export default function MessagePage() {
                 name="service"
                 id="service"
                 required
-                className="p-2.5 outline-none pr-4 bg-white rounded-md w-full cursor-pointer"
+                className="p-2.5 outline-none text-[14px] pr-4 bg-white rounded-md w-full cursor-pointer"
               >
                 <option value="" className="text-gray-300">
                   Select Service
@@ -114,7 +117,7 @@ export default function MessagePage() {
             </div>
             <div className=" rounded-md flex relative items-center justify-center">
               <input
-                className="p-2.5 outline-none rounded-md w-full"
+                className="p-2.5 outline-none text-[14px] rounded-md w-full"
                 type="tel"
                 name="number"
                 id="number"
@@ -134,7 +137,7 @@ export default function MessagePage() {
                 id="message"
                 rows={5}
                 required
-                className="w-full outline-none p-2.5"
+                className="w-full outline-none text-[14px] p-2.5"
                 placeholder="Your Message"
               ></textarea>
               <LuMessageCircle
@@ -153,29 +156,31 @@ export default function MessagePage() {
         )}
       </div>
       {success ? (
-        <div class="bg-slate-200">
-          <div class="bg-slate-100 p-6  md:mx-auto">
+        <div className="bg-slate-200">
+          <div className="bg-slate-200 mt-[-60px] p-6  md:mx-auto">
             <svg
               viewBox="0 0 24 24"
-              class="text-green-600 w-16 h-16 mx-auto my-6"
+              className="text-green-600 w-16 h-16 mx-auto my-6"
             >
               <path
                 fill="currentColor"
                 d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
               ></path>
             </svg>
-            <div class="text-center">
-              <h3 class="md:text-2xl text-base text-gray-900 font-semibold text-center">
+            <div className="text-center">
+              <h3 className="md:text-2xl text-base text-gray-900 font-semibold text-center">
                 Message Sent!
               </h3>
-              <p class="text-gray-600 my-2">
+              <p className="text-gray-600 my-2">
                 Thank you for contacting us, Our Staff will contact you soon!!!.
               </p>
               <p> Have a great day! </p>
-              <div class="py-10 text-center">
+              <div className="py-10 text-center">
                 <button
-                  onClick={navigation.push("home")}
-                  class="px-12 rounded-3xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3"
+                  onClick={() => {
+                    navigation.push("home");
+                  }}
+                  className="px-12 rounded-3xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3"
                 >
                   GO BACK
                 </button>

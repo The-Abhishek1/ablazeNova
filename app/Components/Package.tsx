@@ -3,9 +3,12 @@ import React, { useEffect } from "react";
 import { FaCircleCheck } from "react-icons/fa6";
 import { BsMotherboard } from "react-icons/bs";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 //Main Function
 export default function Package() {
+  const router = useRouter();
+
   return (
     <div className="flex bg-slate-100 flex-col items-center gap-7 py-10 px-5">
       <div className="flex flex-col items-center gap-3">
@@ -64,7 +67,7 @@ export default function Package() {
             <div className="p-2 self-center transition-all ease-in-out delay-200 duration-700 cursor-pointer shadow-lg shadow-indigo-950 rounded-md flex flex-row items-center justify-center gap-2 bg-blue-500 text-white w-[180px] hover:bg-indigo-950">
               <button
                 onClick={() => {
-                  console.log("Clicked on Purchased Now");
+                  router.push("/billing");
                 }}
                 className="uppercase font-bold text-[13px] mxl:text-[13px]"
               >
@@ -117,7 +120,7 @@ export default function Package() {
             <div className="p-2 self-center transition-all ease-in-out delay-200 duration-700 cursor-pointer shadow-lg shadow-indigo-950 rounded-md flex flex-row items-center justify-center gap-2 bg-blue-500 text-white w-[180px] hover:bg-indigo-950">
               <button
                 onClick={() => {
-                  console.log("Button Clicked");
+                  router.push("/billing");
                 }}
                 className="uppercase font-bold text-[13px] mxl:text-[13px]"
               >
@@ -170,7 +173,7 @@ export default function Package() {
             <div className="p-2 self-center transition-all ease-in-out delay-200 duration-700 cursor-pointer shadow-lg shadow-indigo-950 rounded-md flex flex-row items-center justify-center gap-2 bg-blue-500 text-white w-[180px] hover:bg-indigo-950">
               <button
                 onClick={() => {
-                  console.log("Button Clicked");
+                  router.push("/billing");
                 }}
                 className="uppercase font-bold text-[13px] mxl:text-[13px]"
               >

@@ -21,10 +21,18 @@ export default function Rightside() {
     const password = formData.get("password");
 
     const response = await signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
+      .then((result) => {
+        const user = result.user;
+        const email = user.email;
         console.log(user);
-        navigation.push("home");
+        if (
+          email === "abhishekgowda85384@gamil.com"
+          // || "idiot63666@gmail.com"
+        ) {
+          navigation.push("/adminx");
+        } else {
+          navigation.push("/home");
+        }
       })
       .catch((error) => {
         const errorCode = error.code;

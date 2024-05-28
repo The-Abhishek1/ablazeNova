@@ -18,7 +18,7 @@ import {
 } from "react-icons/fa6";
 import Image from "next/image";
 import logo from "@/publiclogo.png";
-import Girl1 from "@/publicgirl2.webp";
+import Girl1 from "@/publicgirl1.jpg";
 import Girl2 from "@/publicgirl2.webp";
 import Link from "next/link";
 import { useRouter, redirect } from "next/navigation";
