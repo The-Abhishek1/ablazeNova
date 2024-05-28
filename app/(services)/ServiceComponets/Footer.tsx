@@ -78,19 +78,35 @@ export default function Footer() {
           </p>
           <div className="flex flex-row items-center justify-center gap-5">
             <div className="border-2 p-2 border-slate-400 rounded-full cursor-pointer">
-              <FaFacebookSquare size={20} />
+              <Link
+                href={"https://www.facebook.com/profile.php?id=100055080378695"}
+              >
+                <FaFacebookSquare size={20} />
+              </Link>
             </div>
             <div className="border-2 p-2 border-slate-400 rounded-full cursor-pointer">
-              <FaWhatsapp size={20} />
+              <Link href={"https://chat.whatsapp.com/HBVLCUUYSIZ0OOSYPgMXEq"}>
+                <FaWhatsapp size={20} />
+              </Link>
             </div>
             <div className="border-2 p-2 border-slate-400 rounded-full cursor-pointer">
-              <FaInstagram size={20} />
+              <Link
+                href={
+                  "https://www.instagram.com/ablazenova?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                }
+              >
+                <FaInstagram size={20} />
+              </Link>
             </div>
             <div className="border-2 p-2 border-slate-400 rounded-full cursor-pointer">
-              <FaDiscord size={20} />
+              <Link href={"https://discord.com/invite/4t925gde"}>
+                <FaDiscord size={20} />
+              </Link>
             </div>
             <div className="border-2 p-2 border-slate-400 rounded-full cursor-pointer">
-              <FaYoutube size={20} />
+              <Link href={"https://www.youtube.com/@idiot017"}>
+                <FaYoutube />
+              </Link>
             </div>
           </div>
         </div>

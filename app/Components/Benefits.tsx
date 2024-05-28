@@ -1,5 +1,5 @@
 import React from "react";
-import help from "@/publiccustomer-service.png";
+import help from "@/publichelp333.jpg";
 import flexible from "@/publicflexible.jpg";
 import Image from "next/image";
 

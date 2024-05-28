@@ -32,7 +32,7 @@ export const pages = [
   },
   {
     id: 2,
-    text: "aboutUs",
+    text: "aboutus",
   },
   {
     id: 3,
