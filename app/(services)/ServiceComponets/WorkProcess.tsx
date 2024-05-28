@@ -1,11 +1,9 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import promote from "@/publicpromote.png";
-import design from "@/publicillustration.png";
-import website from "@/publicapp-development.png";
-import business from "@/publicdata-analysis.png";
-import services from "@/publicsoftwareservice.png";
-import app from "@/publiccoding.png";
+import analysis from "@/publicanalysis.jpg";
+import execute from "@/publicflexible.jpg";
+import select from "@/publicselect.jpg";
+import result from "@/publicresult.jpg";
 import Image from "next/image";
 import { BsMotherboard } from "react-icons/bs";
 
@@ -14,28 +12,28 @@ export default function WorkProcess() {
   const Services = [
     {
       id: "01",
-      image: business,
+      image: select,
       workName: "Select a Project",
       description:
         "Embark on your digital journey by handpicking the perfect project that aligns with your vision and goals.",
     },
     {
       id: "02",
-      image: services,
+      image: analysis,
       workName: "Project analysis",
       description:
         "Dive deep into the intricacies of your project as our experts conduct thorough analysis to uncover hidden potentials and challenges.",
     },
     {
       id: "03",
-      image: design,
+      image: execute,
       workName: "Plan Execute",
       description:
         "Watch your ideas come to life as we meticulously craft a strategic roadmap and flawlessly execute each phase with precision.",
     },
     {
       id: "04",
-      image: app,
+      image: result,
       workName: "Deliver result",
       description:
         "Experience the thrill of success as we deliver exceptional results that exceed your expectations and propel your business forward.",
@@ -58,13 +56,6 @@ export default function WorkProcess() {
             How To Work It!
           </h1>
         </div>
-
-        {/* <div className="p-2 lg:absolute right-20 cursor-pointer rounded-md flex flex-row items-center justify-center gap-2 bg-blue-500 shadow-lg shadow-blue-400 text-white w-[200px]">
-          <button className="uppercase font-bold text-[13px]">
-            View all services
-          </button>
-          <FaArrowRightLong />
-        </div> */}
       </div>
       <div className="flex bg-slate-200 flex-row flex-wrap lg:mx-20 items-center justify-center gap-10 p-4 py-14 ">
         {Services.map((service, index) => (
@@ -83,7 +74,7 @@ export default function WorkProcess() {
                   <h1 className="text-[18px] font-bold mlg:text-[15px]">
                     {service.workName}
                   </h1>
-                  <p className="text-[15px] text-center mlg:text-[13px]">
+                  <p className="text-[13px] text-center mlg:text-[13px]">
                     {service.description}
                   </p>
                 </div>

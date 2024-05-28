@@ -31,10 +31,8 @@ export default function Rightside() {
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log("====================================");
         console.log(errorCode, errorMessage);
         alert(errorMessage);
-        console.log("====================================");
       })
       .finally(() => {
         setLoading(false);
@@ -42,8 +40,18 @@ export default function Rightside() {
   }
   const GoogleSignIn = () => {
     signInWithPopup(auth, signinGoogle)
-      .then(() => {
-        navigation.push("/home");
+      .then((result) => {
+        const user = result.user;
+        const email = user.email;
+        console.log(user);
+        if (
+          email === "abhishekgowda85384@gamil.com"
+          // || "idiot63666@gmail.com"
+        ) {
+          navigation.push("/home");
+        } else {
+          navigation.push("/home");
+        }
       })
       .catch((error) => {
         alert(error);

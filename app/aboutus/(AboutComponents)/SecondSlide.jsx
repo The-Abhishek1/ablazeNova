@@ -52,12 +52,12 @@ export default function SecondSlide() {
           </div>
         </div>
         <div className="flex flex-row gap-5 justify-around msm:flex-col msm:items-center">
-          <div className="w-[150px] flex flex-row p-2 items-center gap-2 cursor-pointer shadow-lg shadow-blue-400 bg-blue-500 text-white h-[45px] rounded-md">
+          {/* <div className="w-[150px] flex flex-row p-2 items-center gap-2 cursor-pointer shadow-lg shadow-blue-400 bg-blue-500 text-white h-[45px] rounded-md">
             <button className="uppercase font-bold text-[13px]">
               Discover More
             </button>
             <FaArrowRightLong />
-          </div>
+          </div> */}
           <div className="flex flex-row items-center gap-3">
             <div className="text-[30px] cursor-pointer  flex p-1 justify-center items-center w-[50px] h-[50px] relative bg-blue-600 text-white rounded-full">
               <div className="w-[80%] absolute animate-ping rounded-full h-[80%] bg-indigo-600"></div>

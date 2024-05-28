@@ -11,6 +11,8 @@ export default function Welcome() {
   return (
     <div className="flex flex-col items-center justify-center  h-[100vh]">
       <Image
+        alt="welcome"
+        priority
         src={welcome2}
         className="max-h-[80%] md:max-w-[60%] max-w-[80%]"
       />

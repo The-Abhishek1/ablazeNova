@@ -7,9 +7,11 @@ import { ImCheckboxChecked } from "react-icons/im";
 import photo1 from "@/publicdesign.png";
 import photo2 from "@/publicapi.png";
 import photo3 from "@/publicweb-maintenance.png";
+import { useRouter } from "next/navigation";
 
 //Main Function
 export default function SecondSlide() {
+  const router = useRouter();
   return (
     <div className="flex  bg-slate-200 flex-row items-center justify-around p-4 py-8 msm:pb-0 msm:flex-col-reverse gap-4">
       <div className="relative">
@@ -57,7 +59,7 @@ export default function SecondSlide() {
           <div className="p-2 cursor-pointer rounded-md flex flex-row shadow-lg shadow-blue-400 items-center self-center justify-center gap-2 bg-blue-500 text-white w-[180px]">
             <button
               onClick={() => {
-                console.log("Button Clicked");
+                router.push("/aboutus");
               }}
               className="uppercase font-bold text-[13px]"
             >

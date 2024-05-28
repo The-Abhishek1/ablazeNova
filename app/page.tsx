@@ -1,7 +1,8 @@
 import React from "react";
 import Welcome from "../app/(welcome)/Welcome";
+
 //Main Function
-function Page() {
+async function Page() {
   return (
     <div className="scroll-smooth">
       <Welcome />

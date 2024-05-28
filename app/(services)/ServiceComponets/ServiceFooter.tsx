@@ -18,7 +18,8 @@ import {
 } from "react-icons/fa6";
 import Image from "next/image";
 import logo from "@/publiclogo.png";
-import post from "@/publiccustomer-service.png";
+import Girl1 from "@/publicgirl2.webp";
+import Girl2 from "@/publicgirl2.webp";
 import Link from "next/link";
 import { useRouter, redirect } from "next/navigation";
 
@@ -182,10 +183,10 @@ export default function ServiceFooter() {
           </h1>
           <div className="flex flex-col gap-4 ">
             <div className="flex flex-row xl:gap-4 gap-2 bg-slate-300 text-blue-500 p-4 rounded-md cursor-progress">
-              <Image src={post} alt="post" className="xl:w-[100px] w-[70px]" />
+              <Image src={Girl1} alt="post" className="xl:w-[100px] w-[70px]" />
               <div className="flex flex-col gap-3 items-center">
-                <h3 className="text-[14px] text-center mlg:text-[13px]">
-                  Unsatiable Entreaties May Collecting Power.
+                <h3 className="text-[13px] text-center">
+                  "10 Tips for Improving Your Website's SEO"
                 </h3>
                 <div className="flex flex-row items-center justify-between gap-3">
                   <FaCalendarAlt />
@@ -196,10 +197,10 @@ export default function ServiceFooter() {
               </div>
             </div>
             <div className="flex flex-row xl:gap-4 gap-2 bg-slate-300 text-blue-500 p-4 rounded-md cursor-progress">
-              <Image src={post} alt="post" className="xl:w-[100px] w-[70px]" />
+              <Image src={Girl2} alt="post" className="xl:w-[100px] w-[70px]" />
               <div className="flex flex-col gap-3 items-center">
-                <h3 className="text-[14px] text-center mlg:text-[13px]">
-                  Unsatiable Entreaties May Collecting Power.
+                <h3 className="text-[13px] text-center">
+                  "The Importance of Responsive Design in Modern Websites"
                 </h3>
                 <div className="flex flex-row items-center justify-between gap-3">
                   <FaCalendarAlt />

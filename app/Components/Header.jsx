@@ -11,14 +11,30 @@ import {
 import { IoSearchOutline } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GoGoal } from "react-icons/go";
-import { IoMdClose } from "react-icons/io";
+import { IoMdClose, IoMdLogOut } from "react-icons/io";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { auth } from "../(firebase)/config";
+import List from "../(SearchBar)/List.jsx";
+import ServiceList from "../(SearchBar)/ServiceList";
 
 //Main Function
 export default function Header() {
   const router = useRouter();
+  const [inputText, setInputText] = useState("");
+  let inputHandler = (e) => {
+    //convert input text to lower case
+    var lowerCase = e.target.value.toLowerCase();
+    setInputText(lowerCase);
+  };
+  const [serviceText, setServiceText] = useState("");
+  let serviceHandler = (e) => {
+    //convert input text to lower case
+    var lowerCase = e.target.value.toLowerCase();
+    setServiceText(lowerCase);
+  };
 
+  const [profile, Showprofile] = useState(false);
   //State to show menu bar
   const [showMenu, setShowMenu] = useState(false);
   //State to show searchBar
@@ -37,7 +53,6 @@ export default function Header() {
           height={40}
           width={40}
           className="rounded-[30px] h-[40px] w-[40px]"
-          priority={true}
         />
         <div className="msmm:hidden flex flex-row items-center text-[26px] gap-2 ">
           <h2 className="font-bold text-red-600">Ablaze</h2>
@@ -86,8 +101,26 @@ export default function Header() {
       <div className="flex flex-row items-center gap-3">
         <div
           onClick={() => {
+            Showprofile(!profile);
+            setCart(false);
+            setSearch(false);
+            setShowMenu(false);
+          }}
+        >
+          <img
+            src={auth?.currentUser?.photoURL}
+            alt="Profile"
+            height={40}
+            width={40}
+            className="rounded-[30px] cursor-pointer sm:h-[48px] sm:w-[48px]"
+            priority={true}
+          />
+        </div>
+        <div
+          onClick={() => {
             setShowMenu(false);
             setCart(false);
+            Showprofile(false);
             setSearch(!showSearch);
           }}
           className="bg-white p-4 msm:p-3 rounded-full cursor-pointer"
@@ -108,6 +141,7 @@ export default function Header() {
             setSearch(false);
             setShowMenu(false);
             setCart(true);
+            Showprofile(false);
           }}
           className="bg-white flex flex-col items-center overflow-hidden relative  p-4 msm:p-3  rounded-full cursor-pointer"
         >
@@ -132,56 +166,12 @@ export default function Header() {
               type="text"
               className="block text-[15px] msm:text-[13px] outline-none w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search..."
+              onChange={inputHandler}
             />
           </div>
-          <ul className="flex flex-col p-4 gap-2 mt-4 font-medium rounded-lg  rtl:space-x-reverse  bg-gray-800 ">
-            <li>
-              <Link
-                onClick={() => setShowMenu(false)}
-                href="home"
-                className="block cursor-pointer hover:text-gray-900 text-[15px] msm:text-[13px] py-2 px-3 rounded hover:bg-gray-100  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white  dark:border-gray-700"
-                aria-current="page"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={() => setShowMenu(false)}
-                href="/aboutus"
-                className="block cursor-pointer hover:text-gray-900 text-[15px] msm:text-[13px] py-2 px-3 rounded hover:bg-gray-100  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white  dark:border-gray-700"
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={() => setShowMenu(false)}
-                href="/services"
-                className="block cursor-pointer hover:text-gray-900 text-[15px] msm:text-[13px] py-2 px-3  rounded hover:bg-gray-100 dark:text-white  dark:hover:bg-gray-700  dark:border-gray-700"
-              >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={() => setShowMenu(false)}
-                href="pages"
-                className="block cursor-pointer hover:text-gray-900 text-[15px] msm:text-[13px] py-2 px-3  rounded hover:bg-gray-100 dark:text-white  dark:hover:bg-gray-700  dark:border-gray-700"
-              >
-                Pages
-              </Link>
-            </li>
-            <li>
-              <Link
-                onClick={() => setShowMenu(false)}
-                href="/contact"
-                className="block cursor-pointer hover:text-gray-900 text-[15px] msm:text-[13px] py-2 px-3  rounded hover:bg-gray-100 dark:text-white  dark:hover:bg-gray-700  dark:border-gray-700"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <div>
+            <List input={inputText} />
+          </div>
         </div>
       ) : null}
       {showSearch ? (
@@ -189,37 +179,14 @@ export default function Header() {
           <div className="relative mt-3">
             <input
               type="text"
-              className="block text-[15px] msm:text-[13px] outline-none w-full p-2 ps-10 text-sm  border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="block text-black text-[15px] msm:text-[13px] outline-none w-full p-2 ps-10 text-sm  border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search..."
+              onChange={serviceHandler}
             />
           </div>
-          <ul className="flex cursor-pointer flex-col p-4 gap-2 mt-4 font-medium rounded-lg  rtl:space-x-reverse  bg-gray-800 ">
-            <li>
-              <Link
-                href="/webdevelopment"
-                className="block cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-white  dark:hover:bg-gray-700  dark:border-gray-700 text-[15px] msm:text-[13px] py-2 px-3 text-white rounded "
-                aria-current="page"
-              >
-                Web development
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/softwareservices"
-                className="block cursor-pointer hover:text-gray-900 text-[15px] msm:text-[13px] py-2 px-3  rounded hover:bg-gray-100  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white  dark:border-gray-700"
-              >
-                Software Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/businessanalysis"
-                className="block text-[15px] cursor-pointer hover:text-gray-900 msm:text-[13px] py-2 px-3 rounded  hover:bg-gray-100 dark:text-white  dark:hover:bg-gray-700  dark:border-gray-700"
-              >
-                Bussiness Analysis
-              </Link>
-            </li>
-          </ul>
+          <div>
+            <ServiceList input={serviceText} />
+          </div>
         </div>
       ) : null}
       {showCart ? (
@@ -307,9 +274,41 @@ export default function Header() {
           </div>
         </div>
       ) : null}
+      {profile ? (
+        <div className="absolute sm:top-24 flex flex-col gap-4 top-20 right-5 ">
+          <div className="flex flex-col gap-2 p-3 rounded-lg bg-slate-50">
+            <h3 className="font-bold text-[17px]">
+              👋{" "}
+              <p className="inline text-[12px]">
+                Hey {auth?.currentUser?.displayName}
+              </p>
+            </h3>
+            <h5 className="text-[11px] font-bold">
+              Emai:{" "}
+              <p className="inline font-normal">{auth?.currentUser?.email}</p>
+            </h5>
+            <h5 className="text-[11px] font-bold">
+              User ID:{" "}
+              <p className="inline font-normal">{auth?.currentUser?.uid}</p>
+            </h5>
+          </div>
+          <div
+            onClick={() => {
+              auth?.signOut;
+              router.push("/signin");
+            }}
+            className="flex p-3 justify-center cursor-pointer rounded-lg bg-slate-50 flex-row items-center gap-2 text-[14px] font-bold text-red-600"
+          >
+            <div>Logout</div>
+            <div>
+              <IoMdLogOut />
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }
-{
-  <div className="absolute bg-gray-400 -z-10 border-2 left-0 blur-2xl w-full h-[90%]"></div>;
-}
+// {
+//   <div className="absolute bg-gray-400 -z-10 border-2 left-0 blur-2xl w-full h-[90%]"></div>;
+// }

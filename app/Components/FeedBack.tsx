@@ -5,8 +5,10 @@ import { BsMotherboard } from "react-icons/bs";
 import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import Image from "next/image";
-import photo1 from "@/publicapp-development.png";
-import photo2 from "@/publicbillboard.png";
+import Girl1 from "@/publicgirl1.jpg";
+import Girl2 from "@/publicgirl2.webp";
+import Boy1 from "@/publicboy1.avif";
+import Boy2 from "@/publicboy2.webp";
 
 //Main Function
 export default function ProgressSlider() {
@@ -19,30 +21,30 @@ export default function ProgressSlider() {
 
   const items = [
     {
-      img: photo1,
+      img: Girl1,
       desc: "Adithi",
-      buttonIcon: photo1,
+      buttonIcon: Girl1,
       position: "CEO at Infosys",
       feed: "Ablaze Nova truly exceeded my expectations! Their web development team created a stunning website for my business, and their attention to detail was impeccable. I highly recommend their services to anyone looking to elevate their online presence",
     },
     {
-      img: photo2,
+      img: Boy1,
       desc: "Sudeeksh",
-      buttonIcon: photo2,
+      buttonIcon: Boy1,
       position: "CEO at Wipro",
       feed: `I couldn't be happier with the mobile app developed by Ablaze Nova. Not only is it user-friendly, but the team also ensured that it perfectly aligned with my vision. Their professionalism and expertise are unmatched!`,
     },
     {
-      img: photo1,
+      img: Girl2,
       desc: "Bindu",
-      buttonIcon: photo1,
+      buttonIcon: Girl2,
       position: "CEO at TCS",
       feed: `Ablaze Nova's website management service has been a game-changer for our company. They handle everything seamlessly, allowing us to focus on growing our business. Their responsiveness and proactive approach are truly commendable.`,
     },
     {
-      img: photo2,
-      desc: "Akshay",
-      buttonIcon: photo2,
+      img: Boy2,
+      desc: "Idiot",
+      buttonIcon: Boy2,
       position: "CEO at Birla",
       feed: `Working with Ablaze Nova on UI/UX design was an absolute pleasure! They took the time to understand our brand identity and delivered designs that exceeded our expectations. Their creativity and innovation shine through in every project they undertake.`,
     },
