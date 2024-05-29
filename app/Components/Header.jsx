@@ -17,10 +17,13 @@ import Link from "next/link";
 import { auth } from "../(firebase)/config";
 import List from "../(SearchBar)/List.jsx";
 import ServiceList from "../(SearchBar)/ServiceList";
+import profilePhoto from "@/publicprofilepic2.jpg";
 
 //Main Function
 export default function Header() {
   const router = useRouter();
+  const photo = require("@/publicprofileicon.jpg");
+
   const [inputText, setInputText] = useState("");
   let inputHandler = (e) => {
     //convert input text to lower case
@@ -107,13 +110,24 @@ export default function Header() {
             setShowMenu(false);
           }}
         >
-          <img
-            src={auth?.currentUser?.photoURL}
-            alt="Profile"
-            height={40}
-            width={40}
-            className="rounded-[30px] cursor-pointer sm:h-[48px] sm:w-[48px]"
-          />
+          {auth?.currentUser?.photoURL == null ? (
+            <Image
+              unoptimized // for image caching, else error
+              src={profilePhoto}
+              alt="Profile"
+              height={40}
+              width={40}
+              className="rounded-[30px] cursor-pointer sm:h-[48px] sm:w-[48px]"
+            />
+          ) : (
+            <img
+              src={auth?.currentUser?.photoURL}
+              alt="Profile"
+              height={40}
+              width={40}
+              className="rounded-[30px] cursor-pointer sm:h-[48px] sm:w-[48px]"
+            />
+          )}
         </div>
         <div
           onClick={() => {
@@ -276,7 +290,7 @@ export default function Header() {
       {profile ? (
         <div className="absolute sm:top-24 flex flex-col gap-4 top-20 right-5 ">
           <div className="flex flex-col gap-2 p-3 rounded-lg bg-slate-50">
-            <h3 className="font-bold text-[17px]">
+            <h3 className="font-bold text-[17px] ml-4">
               👋{" "}
               <p className="inline text-[12px]">
                 Hey {auth?.currentUser?.displayName}

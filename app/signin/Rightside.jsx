@@ -10,6 +10,7 @@ import { auth, signinGoogle } from "../(firebase)/config";
 //Main Function
 export default function Rightside() {
   const navigation = useRouter();
+  const [signIn, setSignIn] = useState(false);
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(event) {
@@ -25,6 +26,7 @@ export default function Rightside() {
         const user = result.user;
         const email = user.email;
         console.log(user);
+        setSignIn(true);
         if (
           email === "abhishekgowda85384@gamil.com"
           // || "idiot63666@gmail.com"
@@ -49,6 +51,7 @@ export default function Rightside() {
     signInWithPopup(auth, signinGoogle)
       .then(() => {
         navigation.push("/home");
+        setSignIn(true);
       })
       .catch((error) => {
         alert(error);

@@ -10,6 +10,7 @@ import { auth, signinGoogle } from "../(firebase)/config";
 //Main Function
 export default function Rightside() {
   const navigation = useRouter();
+  const [signIn, setSignIn] = useState(false);
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(event) {
@@ -26,6 +27,7 @@ export default function Rightside() {
         console.log(user);
       })
       .then(() => {
+        setSignIn(true);
         navigation.push("/home");
       })
       .catch((error) => {
@@ -44,6 +46,7 @@ export default function Rightside() {
         const user = result.user;
         const email = user.email;
         console.log(user);
+        setSignIn(true);
         if (
           email === "abhishekgowda85384@gamil.com"
           // || "idiot63666@gmail.com"
