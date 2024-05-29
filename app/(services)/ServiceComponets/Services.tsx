@@ -57,7 +57,7 @@ export default function Services() {
   ];
 
   return (
-    <div className="flex bg-slate-200 flex-row flex-wrap lg:mx-20 items-center justify-center gap-14 p-4 py-14 ">
+    <div className="flex bg-slate-200 flex-row flex-wrap lg:px-20 items-center justify-center gap-14 p-4 py-14 ">
       {Services.map((service, index) => (
         <Link key={index} href={service.path}>
           <div className="flex transition delay-150 duration-300 ease-linear flex-col gap-2 relative items-center justify-center  p-4 bg-white group  hover:bg-indigo-600 rounded-md hover:text-white w-[250px]">
