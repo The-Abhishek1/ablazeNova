@@ -22,7 +22,7 @@ export default function ProgressSlider() {
   const items = [
     {
       img: Girl1,
-      desc: "Adithi",
+      desc: "Kristen Stewart",
       buttonIcon: Girl1,
       position: "CEO at Infosys",
       feed: "Ablaze Nova truly exceeded my expectations! Their web development team created a stunning website for my business, and their attention to detail was impeccable. I highly recommend their services to anyone looking to elevate their online presence",
@@ -36,7 +36,7 @@ export default function ProgressSlider() {
     },
     {
       img: Girl2,
-      desc: "Bindu",
+      desc: "Emma Watson",
       buttonIcon: Girl2,
       position: "CEO at TCS",
       feed: `Ablaze Nova's website management service has been a game-changer for our company. They handle everything seamlessly, allowing us to focus on growing our business. Their responsiveness and proactive approach are truly commendable.`,
