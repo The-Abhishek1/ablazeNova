@@ -11,11 +11,14 @@ import Contact from "../Components/Contact";
 import Package from "../Components/Package";
 import FAQ from "../Components/FAQ";
 import Footer from "../Components/Footer";
-
+import TopLinks from "../Components/TopLinks";
+import Header from "../Components/Header";
 //Main Function
-function Page() {
+function Home() {
   return (
     <div className="scroll-smooth">
+      <TopLinks />
+      <Header />
       <FirstSlide />
       <SecondSlide />
       <ThirdSlide />
@@ -31,4 +34,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default Home;

@@ -65,7 +65,7 @@ export default function Header() {
       <div className="flex text-blue-500 flex-row relative items-center gap-4 mlg:hidden justify-center">
         <div
           onClick={() => {
-            router.push("home");
+            router.push("/");
           }}
           className="font-bold hover:text-indigo-500 cursor-pointer"
         >
@@ -164,6 +164,7 @@ export default function Header() {
         <div
           onClick={() => {
             setSearch(false);
+            Showprofile(false);
             setCart(false);
             setShowMenu(!showMenu);
           }}
@@ -287,7 +288,7 @@ export default function Header() {
           </div>
         </div>
       ) : null}
-      {profile ? (
+      {profile && auth.currentUser != null ? (
         <div className="absolute sm:top-24 flex flex-col gap-4 top-20 right-5 ">
           <div className="flex flex-col gap-2 p-3 rounded-lg bg-slate-50">
             <h3 className="font-bold text-[17px] ml-4">
@@ -319,9 +320,27 @@ export default function Header() {
           </div>
         </div>
       ) : null}
+      {profile && auth.currentUser == null ? (
+        <div className="absolute sm:top-24 flex flex-col gap-4 top-20 right-5 ">
+          <div className="flex flex-col gap-2 p-3 rounded-lg bg-slate-50">
+            <h3 className="font-bold text-center text-[17px]">
+              👋 <p className="inline text-[12px]">Hey User</p>
+            </h3>
+            <p className="text-[10px]">Please signup to get services</p>
+          </div>
+          <div
+            onClick={() => {
+              router.push("/signup");
+            }}
+            className="flex p-3 justify-center cursor-pointer rounded-lg bg-slate-50 flex-row items-center gap-2 text-[14px] font-bold text-green-600"
+          >
+            <div>Sign Up</div>
+            <div>
+              <IoMdLogOut />
+            </div>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }
-// {
-//   <div className="absolute bg-gray-400 -z-10 border-2 left-0 blur-2xl w-full h-[90%]"></div>;
-// }

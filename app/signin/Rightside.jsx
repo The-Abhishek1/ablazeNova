@@ -33,7 +33,7 @@ export default function Rightside() {
         ) {
           navigation.push("/adminx");
         } else {
-          navigation.push("/home");
+          navigation.push("/");
         }
       })
       .catch((error) => {
@@ -50,7 +50,7 @@ export default function Rightside() {
   const GoogleSignIn = () => {
     signInWithPopup(auth, signinGoogle)
       .then(() => {
-        navigation.push("/home");
+        navigation.push("/");
         setSignIn(true);
       })
       .catch((error) => {

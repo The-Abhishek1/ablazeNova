@@ -1,11 +1,11 @@
 import React from "react";
-import Welcome from "../app/(welcome)/Welcome";
+import Home from "../app/(home)/Home";
 
 //Main Function
 async function Page() {
   return (
     <div className="scroll-smooth">
-      <Welcome />
+      <Home />
     </div>
   );
 }

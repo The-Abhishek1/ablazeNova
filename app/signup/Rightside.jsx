@@ -28,7 +28,7 @@ export default function Rightside() {
       })
       .then(() => {
         setSignIn(true);
-        navigation.push("/home");
+        navigation.push("/");
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -53,7 +53,7 @@ export default function Rightside() {
         ) {
           navigation.push("/adminx");
         } else {
-          navigation.push("/home");
+          navigation.push("/");
         }
       })
       .catch((error) => {

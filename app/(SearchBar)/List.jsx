@@ -21,7 +21,11 @@ function List(props) {
       {filteredData.map((item) => (
         <li
           onClick={() => {
-            router.push(item.text);
+            if (item.text == "home") {
+              router.push("/");
+            } else {
+              router.push(item.text);
+            }
           }}
           key={item.id}
           className="block uppercase cursor-pointer hover:text-gray-900 text-[13px] msm:text-[11px] py-2 px-3 rounded hover:bg-gray-100  dark:text-white dark:hover:bg-gray-700 dark:hover:text-white  dark:border-gray-700"
