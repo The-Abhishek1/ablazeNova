@@ -117,31 +117,31 @@ export default function ServiceFooter() {
           <div className="flex flex-col gap-3 justify-center">
             <div className="flex flex-row items-center  gap-2 ">
               <FaAngleRight size={20} />
-              <Link href="aboutus" className="mlg:text-[13px]">
+              <Link href="/aboutus" className="mlg:text-[13px]">
                 About Us
               </Link>
             </div>
             <div className="flex flex-row items-center  gap-2">
               <FaAngleRight size={20} />
-              <Link href="team" className="mlg:text-[13px]">
+              <Link href="/team" className="mlg:text-[13px]">
                 Meet Our Team
               </Link>
             </div>
             <div className="flex flex-row items-center  gap-2">
               <FaAngleRight size={20} />
-              <Link href="projects" className="mlg:text-[13px]">
+              <Link href="/projects" className="mlg:text-[13px]">
                 Our Projects
               </Link>
             </div>
             <div className="flex flex-row items-center  gap-2">
               <FaAngleRight size={20} />
-              <Link href="helpandfaq" className="mlg:text-[13px]">
+              <Link href="/helpandfaq" className="mlg:text-[13px]">
                 Help & FAQ's
               </Link>
             </div>
             <div className="flex flex-row items-center  gap-2">
               <FaAngleRight size={20} />
-              <Link href="contactus" className="mlg:text-[13px]">
+              <Link href="/contactus" className="mlg:text-[13px]">
                 Contact Us
               </Link>
             </div>
@@ -154,38 +154,44 @@ export default function ServiceFooter() {
           <div className="flex flex-col gap-3 justify-center">
             <div className="flex flex-row items-center  gap-2">
               <FaAngleRight size={20} />
-              <Link href="webdevelopment" className="mlg:text-[13px]">
+              <Link href="/services/webdevelopment" className="mlg:text-[13px]">
                 Web Development
               </Link>
             </div>
             <div className="flex flex-row items-center  gap-2">
               <FaAngleRight size={20} />
-              <Link href="appdevelopment" className="mlg:text-[13px]">
+              <Link href="/services/appdevelopment" className="mlg:text-[13px]">
                 App Development
               </Link>
             </div>
             <div className="flex flex-row items-center  gap-2">
               <FaAngleRight size={20} />
-              <Link href="uiuxdesign" className="mlg:text-[13px]">
+              <Link href="/services/uiuxdesign" className="mlg:text-[13px]">
                 UI/UX Design
               </Link>
             </div>
             <div className="flex flex-row items-center  gap-2">
               <FaAngleRight size={20} />
-              <Link href="businessanalysis" className="mlg:text-[13px]">
+              <Link
+                href="/services/businessanalysis"
+                className="mlg:text-[13px]"
+              >
                 Bussiness Analysis
               </Link>
             </div>
             <div className="flex flex-row items-center  gap-2">
               <FaAngleRight size={20} />
-              <Link href="digitalmarketing" className="mlg:text-[13px]">
+              <Link
+                href="/services/digitalmarketing"
+                className="mlg:text-[13px]"
+              >
                 Digital Marketing
               </Link>
             </div>
             <div className="flex flex-row items-center  gap-2">
               <FaAngleRight size={20} />
               <Link
-                href="softwareservices"
+                href="/services/softwareservices"
                 className="mlg:text-[13px] cursor-pointer"
               >
                 Software Services

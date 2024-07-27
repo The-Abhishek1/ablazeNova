@@ -178,7 +178,7 @@ export default function MessagePage() {
               <div className="py-10 text-center">
                 <button
                   onClick={() => {
-                    navigation.push("home");
+                    navigation.push("/home");
                   }}
                   className="px-12 rounded-3xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3"
                 >

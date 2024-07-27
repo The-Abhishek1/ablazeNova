@@ -73,7 +73,7 @@ export default function Header() {
         </div>
         <div
           onClick={() => {
-            router.push("aboutus");
+            router.push("/aboutus");
           }}
           className=" hover:text-indigo-500 font-bold cursor-pointer"
         >
@@ -81,7 +81,7 @@ export default function Header() {
         </div>
         <div
           onClick={() => {
-            router.push("services");
+            router.push("/services");
           }}
           className="flex flex-row items-center gap-1  hover:text-indigo-500 cursor-pointer"
         >
@@ -94,7 +94,7 @@ export default function Header() {
         </div>
         <div
           onClick={() => {
-            router.push("contact");
+            router.push("/contact");
           }}
           className="font-bold hover:text-indigo-500 cursor-pointer"
         >
