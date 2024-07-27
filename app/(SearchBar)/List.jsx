@@ -24,7 +24,7 @@ function List(props) {
             if (item.text == "home") {
               router.push("/");
             } else {
-              router.push(item.text);
+              router.push("/" + item.text);
             }
           }}
           key={item.id}
